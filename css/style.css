@@ -143,6 +143,10 @@ nav > div > div > div {
 
 /* HERO-SECTION */
 
+main {
+  position: relative;
+}
+
 .hero-section {
   position: relative;
   width: 100%;
@@ -307,4 +311,18 @@ nav > div > div > div {
 
 .img-hero3 {
   width: 100%;
+}
+
+/* CARD-OVERLAY */
+
+.card-overlay {
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 1000px;
+  margin: 0 auto;
+  border-radius: 40px 40px 0 0;
+  background-color: #faebeb;
 }
