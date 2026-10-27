@@ -329,3 +329,34 @@ main {
 }
 
 /* MENU-NAV-SECTION */
+
+.circ-icon {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ffdcdc;
+  margin-right: 10px;
+}
+
+.circ-icon > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-46%, -60%);
+}
+
+.menu-nav-hero {
+  padding-top: 20px;
+  font-family: "Fredoka", sans-serif;
+}
+
+.menu-nav-hero h3 {
+  font-size: 40px;
+}
+
+.menu-nav-hero p {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
