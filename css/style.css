@@ -11,7 +11,7 @@
 body {
   background-color: #ffdcdc;
   color: #790d16;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
 /* NAVBAR */
@@ -228,7 +228,6 @@ main {
   top: 50%;
   transform: translateY(-60%);
   color: white;
-  font-family: "Fredoka", sans-serif;
   margin-left: 60px;
 }
 
@@ -349,7 +348,6 @@ main {
 
 .menu-nav-hero {
   padding-top: 20px;
-  font-family: "Fredoka", sans-serif;
 }
 
 .menu-nav-hero h3 {
