@@ -314,6 +314,9 @@ main {
   border-radius: 40px 40px 0 0;
   background-color: #faebeb;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 /* MENU-NAV-SECTION */
