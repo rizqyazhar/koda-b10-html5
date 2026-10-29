@@ -10,33 +10,11 @@
     <nav>
       <div class="header-nav">
         <h1 class="logo">Dakingo</h1>
-        <div>
+        <div class="form-and-buttons">
           <form class="search-input-container">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-search preview-icon">
-              <path d="m21 21-4.34-4.34" />
-              <circle cx="11" cy="11" r="8" />
-            </svg>
-            <input
-              type="text"
-              name="search-input"
-              id="search-input"
-              placeholder="Search"
-              class="search-input" />
-
-            <div class="search-button-container">
-              <button type="submit">
+            <div>
+              <label for="search-input" class="label-search-input">
                 <svg
-                  a
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -46,20 +24,43 @@
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="lucide lucide-scan-box preview-icon">
-                  <path d="M12 12v5.5" />
-                  <path d="M17 3h2a2 2 0 012 2v2" />
-                  <path d="M21 17v2a2 2 0 01-2 2h-2" />
-                  <path d="M3 7V5a2 2 0 012-2h2" />
-                  <path d="M7 21H5a2 2 0 01-2-2v-2" />
-                  <path d="M7.264 9.252 12 12l4.737-2.748" />
-                  <path
-                    d="M7.995 8.514A2 2 0 007 10.244v3.516a2 2 0 00.996 1.73l3 1.74a2 2 0 002.008 0l3-1.74A2 2 0 0017 13.76v-3.517a2 2 0 00-.995-1.73l-3-1.742a2 2 0 00-1.892-.064z" />
+                  class="lucide lucide-search preview-icon">
+                  <path d="m21 21-4.34-4.34" />
+                  <circle cx="11" cy="11" r="8" />
                 </svg>
-              </button>
+              </label>
+              <input
+                type="text"
+                name="search-input"
+                id="search-input"
+                placeholder="Search"
+                class="search-input" />
             </div>
+            <button type="submit" class="search-button-container">
+              <svg
+                a
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-scan-box preview-icon">
+                <path d="M12 12v5.5" />
+                <path d="M17 3h2a2 2 0 012 2v2" />
+                <path d="M21 17v2a2 2 0 01-2 2h-2" />
+                <path d="M3 7V5a2 2 0 012-2h2" />
+                <path d="M7 21H5a2 2 0 01-2-2v-2" />
+                <path d="M7.264 9.252 12 12l4.737-2.748" />
+                <path
+                  d="M7.995 8.514A2 2 0 007 10.244v3.516a2 2 0 00.996 1.73l3 1.74a2 2 0 002.008 0l3-1.74A2 2 0 0017 13.76v-3.517a2 2 0 00-.995-1.73l-3-1.742a2 2 0 00-1.892-.064z" />
+              </svg>
+            </button>
           </form>
-          <div>
+          <button class="button-cart">
             <svg
               class="cart-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -79,8 +80,8 @@
               <circle cx="18" cy="20" r="2" />
               <circle cx="8" cy="20" r="2" />
             </svg>
-            <button>Login/Signup</button>
-          </div>
+          </button>
+          <button class="button-login-signup">Login/Signup</button>
         </div>
       </div>
       <div class="nav-link">

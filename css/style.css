@@ -17,10 +17,120 @@ body {
 
 /* NAVBAR */
 
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .header-nav {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 80px;
   border-bottom: 2px solid #fecaca;
+}
+
+.form-and-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input-container {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #790d16;
+  border-radius: 16px;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.search-input-container > div {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  background-color: white;
+}
+
+.label-search-input {
+  display: flex;
+  align-items: center;
+  transform: translateY(-1px);
+  padding: 0 5px;
+}
+
+.label-search-input svg {
+  width: 14px;
+  height: 14px;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 4px;
+}
+
+.search-button-container {
+  width: 28px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #790d16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button-container > svg {
+  color: white;
+  width: 14px;
+  height: 14px;
+}
+
+.button-cart,
+.button-login-signup {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: #790d16;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 0 80px 10px;
+}
+
+.nav-link > ul {
+  display: flex;
+  align-items: center;
+  gap: 84px;
+  list-style-type: none;
+}
+
+.nav-link > ul > li {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.order-button {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: #790d16;
+  padding: 8px 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* 
+.header-nav {
+  position: relative;
 }
 
 nav > div > div {
@@ -29,16 +139,7 @@ nav > div > div {
   right: 80px;
 }
 
-.search-input-container {
-  width: 250px;
-  position: relative;
-  display: inline-block;
-  border: 1px solid #790d16;
-  border-radius: 16px;
-  overflow: hidden;
-  line-height: 0;
-  font-size: 0;
-}
+
 
 .search-input-container > svg {
   width: 16px;
@@ -75,12 +176,7 @@ nav > div > div {
 }
 
 .search-input {
-  width: 90%;
-  height: inherit;
-  border: none;
-  outline: none;
-  background-color: white;
-  padding: 8px 16px;
+  
 }
 
 .search-input::placeholder {
@@ -122,8 +218,7 @@ nav > div > div > div {
 .nav-link > ul li {
   display: inline-block;
   margin-right: 70px;
-  font-size: 16px;
-  font-weight: 700;
+  
 }
 
 .nav-link > ul li:nth-last-child(1) {
@@ -132,15 +227,8 @@ nav > div > div > div {
 
 .order-button {
   display: inline-block;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  background-color: #790d16;
-  padding: 8px 30px;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-}
+  
+} */
 
 /* HERO-SECTION */
 
