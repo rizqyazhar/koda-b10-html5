@@ -500,9 +500,63 @@ main {
   font-weight: 600;
 }
 
+/* OFFERS SECTION */
+
 .offers-section {
-  padding: 80px 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 80px 0;
+}
+
+.offer-section-content-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.offer-section-content-box {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.offer-card {
+  width: 100%;
+  background-color: #ffdcdc;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.offer-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.offer-caption {
+  font-size: 20px !important;
+  font-weight: 500;
+}
+
+.offer-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .circ-icon2 {
@@ -510,82 +564,48 @@ main {
   height: 60px;
   border-radius: 100%;
   border: 2px solid #790d16;
-  position: relative;
-  margin-bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circ-icon2 svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 32px;
   height: 32px;
 }
 
 .offer-title {
-  display: inline-block;
   font-size: 16px !important;
   font-weight: 500;
   text-align: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .offer-title span {
   display: block;
 }
 
-.offer-box {
-  position: relative;
-  width: 80px;
-  height: 110px;
-  display: inline-block;
-  margin-right: 40px;
-}
-
-.offer-caption {
-  display: inline-block;
-  font-size: 20px !important;
-  font-weight: 500;
-  text-align: center;
-  transform: translateX(9%);
-}
-
-.offer-section-content-box {
-  display: inline-block;
-  width: 50%;
-}
-
-.offer-card {
+.offer-card2 {
+  width: 100%;
   background-color: #ffdcdc;
-  padding: 20px;
+  padding: 20px 40px;
   border-radius: 20px;
-  margin-top: 30px;
-}
-
-.offer-boxes {
-  transform: translateX(3.5%);
-  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .offer-flyer-img-box {
   width: 100px;
   overflow: hidden;
-  display: inline-block;
-  transform: translateX(30%);
 }
+
 .offer-flyer-img {
   width: 100%;
 }
 
 .offer-flyer-text-box {
-  display: inline-block;
-  position: relative;
-  transform: translateX(30%);
+  display: flex;
+  flex-direction: column;
 }
 
 .offer-flyer-title {
@@ -597,8 +617,14 @@ main {
   font-size: 18px !important;
   font-weight: 500;
 }
+
 .offer-flyer-caption span {
   display: block;
+}
+
+.offer-flyer-button-box {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .offer-flyer-button {
@@ -609,44 +635,54 @@ main {
   font-weight: 700;
   padding: 8px 16px;
   border-radius: 16px;
-  transform: translateX(120%);
+}
+
+.offer-card3 {
+  width: 100%;
+  background-color: #ffdcdc;
+  padding: 20px 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.offer-card3 > div:nth-child(2) {
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.profile-img-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .circ-icon img {
   width: 100%;
 }
 
-.circ-icon:nth-last-child(1) {
-  margin-right: 0;
-}
-
-.profile-img-box {
-  display: inline-block;
-  transform: translateY(20%);
-}
-
 .social-caption {
-  display: inline-block;
-  margin-left: 10px;
-  transform: translateY(-20%);
   font-size: 20px !important;
   font-weight: 500;
 }
 
 .offer-section-img-box {
-  width: 45%;
-  display: inline-block;
-  transform: translateX(10%);
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 300px));
+  grid-template-rows: repeat(3, minmax(0, 162px));
+  gap: 20px;
 }
 
 .act-img-box {
-  width: 250px;
-  height: 170px;
+  width: 100%;
   border-radius: 20px;
   overflow: hidden;
-  display: inline-block;
-  margin: 5px;
-  transform: translateY(20%);
+  object-fit: cover;
+  object-position: center;
 }
 
 .act-img {
@@ -654,19 +690,18 @@ main {
 }
 
 .guarantee-flyer-box {
-  margin-top: 40px;
   width: 100%;
   padding: 10px;
   border-radius: 24px;
   background-color: #790d16;
+  display: flex;
+  justify-content: center;
 }
 
 .guarantee-flyer-caption {
-  font-size: 30px !important;
+  font-size: 32px !important;
   font-weight: 500;
   color: white;
-  text-align: center;
-  transform: translateY(22%);
 }
 
 .footer-overlay {
