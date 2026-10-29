@@ -305,18 +305,6 @@ main {
 
 /* CARD-OVERLAY */
 
-/* .card-overlay {
-  position: absolute;
-  top: 83%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 95%;
-  min-height: 100dvh;
-  margin: 0 auto;
-  border-radius: 40px 40px 0 0;
-  background-color: #faebeb;
-  padding: 20px 50px;
-} */
 .card-overlay {
   transform: translateY(-8%);
   width: 95%;
@@ -329,44 +317,58 @@ main {
 
 /* MENU-NAV-SECTION */
 
+.menu-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .circ-icon {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   border-radius: 100%;
   background-color: #ffdcdc;
-  margin-right: 10px;
   overflow: hidden;
   object-position: center;
 }
 
-.circ-icon > svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-46%, -60%);
-}
-
 .menu-nav-hero {
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.menu-nav-hero h3,
+.menu-nav-hero > div > h3,
 .offers-section > div h3 {
   font-size: 40px;
 }
 
-.menu-nav-hero p,
+.menu-nav-hero > div > p,
 .offers-section > div p {
   font-size: 20px;
   margin-bottom: 16px;
 }
 
+.menu-nav-list {
+  display: flex;
+  gap: 20px;
+}
+
 .menu-nav-list div {
-  display: inline-block;
-  position: absolute;
-  top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   width: 120px;
   height: 120px;
   border-radius: 20px;
@@ -374,33 +376,14 @@ main {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
 }
 
-.menu-nav-list div:nth-child(1) {
-  right: 40%;
-}
-.menu-nav-list div:nth-child(2) {
-  right: 29%;
-}
-.menu-nav-list div:nth-child(3) {
-  right: 18%;
-}
-.menu-nav-list div:nth-child(4) {
-  right: 7%;
-}
-
 .menu-nav-list div svg {
   width: 40px;
   height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -90%);
 }
 
 .menu-nav-list div p {
   font-weight: 600;
   font-size: 16px;
-  text-align: center;
-  transform: translateY(400%);
 }
 
 .best-menu-section {
