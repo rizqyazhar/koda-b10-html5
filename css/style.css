@@ -9,6 +9,7 @@
 }
 
 body {
+  position: relative;
   background-color: #ffdcdc;
   color: #790d16;
   font-family: "Fredoka", sans-serif;
@@ -663,4 +664,114 @@ main {
   color: white;
   text-align: center;
   transform: translateY(22%);
+}
+
+.footer-overlay {
+  position: absolute;
+  bottom: -225%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  margin: 0 auto;
+  background-color: #faebeb;
+  padding: 20px 50px 40px;
+}
+
+footer {
+  width: 100%;
+}
+
+.hero-footer-logo {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-footer-logo a,
+.hero-footer-logo a:hover,
+.hero-footer-logo a:focus,
+.hero-footer-logo a:active,
+.hero-footer-logo a:visited {
+  color: #790d16;
+  text-decoration: none;
+}
+
+.hero-footer-links a {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.hero-footer {
+  display: inline-block;
+  padding-right: 200px;
+}
+
+.other {
+  display: inline-block;
+  transform: translateY(-30%);
+}
+
+.footer-nav-links {
+  margin-bottom: 20px;
+}
+
+.footer-nav-links div {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.footer-nav-links p {
+  font-size: 12px !important;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hero-footer-links,
+.footer-nav-link {
+  color: black;
+}
+
+.footer-nav-link {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.help {
+  display: inline-block;
+  margin-left: 10px;
+  transform: translateY(-80%);
+}
+
+.help svg {
+  transform: translateX(170%);
+}
+
+.form-address {
+  transform: translateX(40%);
+}
+
+.input-email {
+  padding: 7px 14px;
+  border: 1px solid #790d16;
+  border-radius: 16px;
+  outline: none;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.submit-email {
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  padding: 8px 14px;
+  background-color: #790d16;
+  color: white;
+  font-weight: 600;
+}
+
+.help-text {
+  font-size: 12px;
+  text-align: center;
 }
