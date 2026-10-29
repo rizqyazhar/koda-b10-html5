@@ -305,11 +305,20 @@ main {
 
 /* CARD-OVERLAY */
 
-.card-overlay {
+/* .card-overlay {
   position: absolute;
   top: 83%;
   left: 50%;
   transform: translateX(-50%);
+  width: 95%;
+  min-height: 100dvh;
+  margin: 0 auto;
+  border-radius: 40px 40px 0 0;
+  background-color: #faebeb;
+  padding: 20px 50px;
+} */
+.card-overlay {
+  transform: translateY(-8%);
   width: 95%;
   min-height: 100dvh;
   margin: 0 auto;
