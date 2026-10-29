@@ -9,3 +9,7 @@ Me-slicing landing page menggunakan HTML dan CSS dengan batasan tidak menggunaka
 ## Screenshot hasil tanpa flex dan grid
 
 ![screenshot-output-without-flex-grid](/img/screenshot-output-without-flex-grid.png)
+
+## Screenshot hasil dengan flex dan grid
+
+![screenshot-output-without-flex-grid](/img/screenshot-output-with-flex-grid.png)
