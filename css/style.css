@@ -472,6 +472,8 @@ main {
   flex-direction: column;
   gap: 40px;
   @media (width <= 768px) {
+    transform: translateY(-2%);
+    margin-bottom: -3%;
     padding: 28px 18px;
   }
 }
