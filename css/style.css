@@ -18,6 +18,10 @@ body {
   align-items: center;
 }
 
+body:has(.overlay-open) {
+  overflow-y: hidden;
+}
+
 .btn-cta {
   z-index: 10;
   position: fixed;
@@ -78,6 +82,7 @@ nav {
     inset-block: 0;
     right: 0;
     background-color: rgba(0 0 0 / 0.5);
+    overflow: hidden;
   }
 }
 
