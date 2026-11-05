@@ -727,7 +727,7 @@ main {
   flex-direction: column;
   gap: 20px;
   @media (width <= 768px) {
-    display: none;
+    gap: 10px;
   }
 }
 
@@ -735,17 +735,21 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1;
   justify-content: space-between;
   gap: 40px;
+
+  @media (width <= 768px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .offer-section-content-box {
   grid-column: 1 / 2;
-  grid-row: 1 / -1;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 .offer-card {
@@ -758,6 +762,9 @@ main {
   align-items: center;
   justify-content: space-around;
   gap: 10px;
+  @media (width <= 768px) {
+    padding: 20px;
+  }
 }
 
 .offer-boxes {
@@ -765,11 +772,18 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media (width <= 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .offer-caption {
   font-size: 20px !important;
   font-weight: 500;
+  @media (width <= 768px) {
+    font-size: 18px !important;
+  }
 }
 
 .offer-box {
@@ -791,14 +805,17 @@ main {
 }
 
 .circ-icon2 svg {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
 }
 
 .offer-title {
   font-size: 16px !important;
   font-weight: 500;
   text-align: center;
+  @media (width <= 768px) {
+    font-size: 14px !important;
+  }
 }
 
 .offer-title span {
@@ -813,6 +830,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media (width <= 768px) {
+    padding: 20px;
+    flex-direction: column;
+  }
 }
 
 .offer-flyer-img-box {
@@ -832,15 +853,26 @@ main {
 .offer-flyer-title {
   font-size: 28px !important;
   font-weight: 600;
+  @media (width <= 768px) {
+    font-size: 20px !important;
+    text-align: center;
+  }
 }
 
 .offer-flyer-caption {
   font-size: 18px !important;
   font-weight: 500;
+  @media (width <= 768px) {
+    font-size: 14px !important;
+  }
 }
 
 .offer-flyer-caption span {
   display: block;
+
+  @media (width <= 768px) {
+    display: inline;
+  }
 }
 
 .offer-flyer-button-box {
@@ -866,6 +898,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media (width <= 768px) {
+    padding: 20px;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 }
 
 .offer-card3 > div:nth-child(2) {
@@ -891,23 +928,27 @@ main {
 
 .offer-section-img-box {
   grid-column: 2 / 3;
-  grid-row: 1 / -1;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 300px));
   grid-template-rows: repeat(3, minmax(0, 162px));
   gap: 20px;
+  @media (width <= 768px) {
+    grid-column: 1 / 2;
+  }
 }
 
 .act-img-box {
   width: 100%;
+  height: 100%;
   border-radius: 20px;
   overflow: hidden;
-  object-fit: cover;
-  object-position: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .act-img {
   width: 100%;
+  height: 100%;
 }
 
 .guarantee-flyer-box {
@@ -918,12 +959,18 @@ main {
   background-color: #790d16;
   display: flex;
   justify-content: center;
+  @media (width <= 768px) {
+    margin-top: 10px;
+  }
 }
 
 .guarantee-flyer-caption {
   font-size: 32px !important;
   font-weight: 500;
   color: white;
+  @media (width <= 768px) {
+    font-size: 20px !important;
+  }
 }
 
 /* FOOTER */
