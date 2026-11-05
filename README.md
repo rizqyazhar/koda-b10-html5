@@ -13,3 +13,7 @@ Me-slicing landing page menggunakan HTML dan CSS dengan batasan tidak menggunaka
 ## Screenshot hasil dengan flex dan grid
 
 ![screenshot-output-without-flex-grid](/img/screenshot-output-with-flex-grid.png)
+
+## Output GIF in small device with interactivity
+
+![small-device](/small-device-output.gif)
