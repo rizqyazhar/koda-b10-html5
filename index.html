@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dakingo</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="/index.js" defer></script>
   </head>
   <body>
-    <a href="https://wa.me/6281928533537" target="_blank" class="btn-cta">
+    <!-- <a href="https://wa.me/6281928533537" target="_blank" class="btn-cta">
       <svg
         viewBox="0 0 48 48"
         version="1.1"
@@ -40,10 +41,83 @@
           </g>
         </g>
       </svg>
-    </a>
+    </a> -->
+
+    <div id="modalOverlay" class="overlay">
+      <div class="modal">
+        <div>
+          <button id="closeBtn" class="modal-close-btn">
+            <img src="/img/icons/x-icon.svg" alt="" />
+          </button>
+        </div>
+        <button class="button-login-signup">Login/Signup</button>
+        <div>
+          <div class="modal-search">
+            <label for="search-input" class="label-search-input">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-search preview-icon">
+                <path d="m21 21-4.34-4.34" />
+                <circle cx="11" cy="11" r="8" />
+              </svg>
+            </label>
+            <input
+              type="text"
+              name="search-input"
+              id="search-input"
+              placeholder="Search"
+              class="search-input" />
+          </div>
+          <button class="button-cart">
+            <svg
+              class="cart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shopping-cart preview-icon">
+              <path
+                d="m2.05 2.05 1.099-.028a1 1 0 0 1 1.008.815l2.69 14.347A1 1 0 0 0 7.83 18H18" />
+              <path
+                d="M4.563 5h16.435a1 1 0 0 1 .981 1.204l-1.026 6.226A2 2 0 0 1 18.962 14H6.25" />
+              <circle cx="18" cy="20" r="2" />
+              <circle cx="8" cy="20" r="2" />
+            </svg>
+          </button>
+        </div>
+        <div class="nav-modal">
+          <ul>
+            <li>Cakes</li>
+            <li>Theme Cakes</li>
+            <li>Desserts</li>
+            <li>Birthday</li>
+            <li>Hampers</li>
+            <li>Anniversary</li>
+            <li>Occasions</li>
+          </ul>
+          <button class="order-button">ORDER NOW</button>
+        </div>
+      </div>
+    </div>
     <nav>
       <div class="header-nav">
         <h1 class="logo">Dakingo</h1>
+        <button id="hamburgerMenuBtn" class="menu-icon">
+          <img src="/img/icons/menu.svg" alt="menu-icon" />
+        </button>
         <div class="form-and-buttons">
           <form class="search-input-container">
             <div>
